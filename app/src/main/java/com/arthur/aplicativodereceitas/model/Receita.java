@@ -26,6 +26,8 @@ public class Receita {
         this.dificuldade = dificuldade;
     }
 
+
+
     // Getters e Setters
     public String getCategoria() {
         return categoria;
