@@ -2,8 +2,10 @@ package com.arthur.aplicativodereceitas.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -25,11 +27,20 @@ public class AdicionarReceita extends AppCompatActivity {
         EditText editTextModoPreparo = findViewById(R.id.editTextModoPreparo);
         EditText editTextTempo = findViewById(R.id.editTextTempo);
         EditText editTextPorcoes = findViewById(R.id.editTextPorcoes);
+        ImageButton buttonVoltar = findViewById(R.id.buttonVoltar);
         Spinner spinnerCategoria = findViewById(R.id.spinnerCategoria);
         Spinner spinnerDificuldade = findViewById(R.id.spinnerDificuldade);
         Button buttonSalvar = findViewById(R.id.buttonSalvar);
 
         DBController_Receita dbController_Receita = new DBController_Receita(this);
+
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        buttonVoltar.setOnClickListener(v -> {
+            finish();
+        });
 
         // Adicione aqui a lógica para salvar a receita
         buttonSalvar.setOnClickListener(v -> {
