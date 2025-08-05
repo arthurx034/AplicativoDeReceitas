@@ -16,8 +16,8 @@ public class BancoDeDados_Receitas extends SQLiteOpenHelper {
     public static final String RECEITAS_MODO_PREPARO = "modoPreparo";
     public static final String RECEITAS_TEMPO_PREPARO = "tempoPreparo";
     public static final String RECEITAS_PORCOES = "porcoes";
-    public static final String RECEITAS_FOTOPATH = "fotoPath";
     public static final String RECEITAS_DIFICULDADE = "dificuldade";
+    public static final String RECEITAS_CAMINHOIMAGEM = "caminhoImagem";
 
     public static final String TABELA_INGREDIENTES = "ingredientes";
     public static final String INGREDIENTES_ID = "id";
@@ -32,7 +32,7 @@ public class BancoDeDados_Receitas extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(final SQLiteDatabase db) {
-        final String sqlReceitas = "CREATE TABLE " + TABELA_RECEITAS + " (" + RECEITAS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + RECEITAS_NOME + " TEXT NOT NULL, " + RECEITAS_CATEGORIA + " TEXT NOT NULL, " + RECEITAS_MODO_PREPARO + " TEXT NOT NULL, " + RECEITAS_TEMPO_PREPARO + " INTEGER NOT NULL, " + RECEITAS_PORCOES + " INTEGER NOT NULL, " + RECEITAS_FOTOPATH + " TEXT NOT NULL, " + RECEITAS_DIFICULDADE + " TEXT NOT NULL" + ")";
+        final String sqlReceitas = "CREATE TABLE " + TABELA_RECEITAS + " (" + RECEITAS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + RECEITAS_NOME + " TEXT NOT NULL, " + RECEITAS_CATEGORIA + " TEXT NOT NULL, " + RECEITAS_MODO_PREPARO + " TEXT NOT NULL, " + RECEITAS_TEMPO_PREPARO + " INTEGER NOT NULL, " + RECEITAS_PORCOES + " INTEGER NOT NULL, " + RECEITAS_CAMINHOIMAGEM + " TEXT NOT NULL, " + RECEITAS_DIFICULDADE + " TEXT NOT NULL" + ")";
 
         final String sqlIngredientes = "CREATE TABLE " + TABELA_INGREDIENTES + " (" + INGREDIENTES_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + INGREDIENTES_RECEITA_ID + " INTEGER NOT NULL, " + INGREDIENTES_NOME + " TEXT NOT NULL, " + INGREDIENTES_QUANTIDADE + " TEXT NOT NULL, " + INGREDIENTES_UNIDADE + " TEXT NOT NULL" + ")";
 

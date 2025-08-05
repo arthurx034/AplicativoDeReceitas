@@ -28,7 +28,6 @@ public class DBController_Receita {
         valores.put(BancoDeDados_Receitas.RECEITAS_MODO_PREPARO, receita.getModoPreparo());
         valores.put(BancoDeDados_Receitas.RECEITAS_TEMPO_PREPARO, receita.getTempoPreparo());
         valores.put(BancoDeDados_Receitas.RECEITAS_PORCOES, receita.getPorcoes());
-        valores.put(BancoDeDados_Receitas.RECEITAS_FOTOPATH, receita.getFotoPath());
         valores.put(BancoDeDados_Receitas.RECEITAS_DIFICULDADE, receita.getDificuldade());
 
         db.insert(BancoDeDados_Receitas.TABELA_RECEITAS, null, valores);
@@ -60,7 +59,6 @@ public class DBController_Receita {
         valores.put(BancoDeDados_Receitas.RECEITAS_MODO_PREPARO, receita.getModoPreparo());
         valores.put(BancoDeDados_Receitas.RECEITAS_TEMPO_PREPARO, receita.getTempoPreparo());
         valores.put(BancoDeDados_Receitas.RECEITAS_PORCOES, receita.getPorcoes());
-        valores.put(BancoDeDados_Receitas.RECEITAS_FOTOPATH, receita.getFotoPath());
         valores.put(BancoDeDados_Receitas.RECEITAS_DIFICULDADE, receita.getDificuldade());
 
         db.update(
@@ -85,7 +83,6 @@ public class DBController_Receita {
         receita.setModoPreparo(cursor.getString(cursor.getColumnIndexOrThrow(BancoDeDados_Receitas.RECEITAS_MODO_PREPARO)));
         receita.setTempoPreparo(cursor.getInt(cursor.getColumnIndexOrThrow(BancoDeDados_Receitas.RECEITAS_TEMPO_PREPARO)));
         receita.setPorcoes(cursor.getInt(cursor.getColumnIndexOrThrow(BancoDeDados_Receitas.RECEITAS_PORCOES)));
-        receita.setFotoPath(cursor.getString(cursor.getColumnIndexOrThrow(BancoDeDados_Receitas.RECEITAS_FOTOPATH)));
         receita.setDificuldade(cursor.getString(cursor.getColumnIndexOrThrow(BancoDeDados_Receitas.RECEITAS_DIFICULDADE)));
 
         return receita;

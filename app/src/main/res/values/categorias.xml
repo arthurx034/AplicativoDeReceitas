@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="categorias_receita">
+        <item>Selecione uma categoria</item>
+        <item>Massas</item>
+        <item>Carnes</item>
+        <item>Aves</item>
+        <item>Peixes e Frutos do Mar</item>
+        <item>Saladas</item>
+        <item>Sopas e Caldos</item>
+        <item>Vegetariano</item>
+        <item>Vegano</item>
+        <item>Sobremesas</item>
+        <item>Bolos e Tortas</item>
+        <item>Lanches</item>
+        <item>Petiscos</item>
+        <item>Bebidas</item>
+        <item>Light e Diet</item>
+        <item>Sem Glúten</item>
+        <item>Sem Lactose</item>
+    </string-array>
+
+</resources>

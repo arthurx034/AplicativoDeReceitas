@@ -4,28 +4,27 @@ public class Receita {
     private int id;
     private int usuarioId; // se houver login
     private String nome;
-    private String fotoPath;
     private String categoria;
     private String modoPreparo;
     private int tempoPreparo; // minutos
     private int porcoes;
     private String dificuldade;
+    private String caminhoImagem;
 
     public Receita() {
     }
 
-    public Receita(int id, int usuarioId, String nome, String fotoPath, String categoria, String modoPreparo, int tempoPreparo, int porcoes, String dificuldade) {
+    public Receita(int id, int usuarioId, String nome, String fotoPath, String categoria, String modoPreparo, int tempoPreparo, int porcoes, String dificuldade, String caminhoImagem) {
         this.id = id;
         this.usuarioId = usuarioId;
         this.nome = nome;
-        this.fotoPath = fotoPath;
         this.categoria = categoria;
         this.modoPreparo = modoPreparo;
         this.tempoPreparo = tempoPreparo;
         this.porcoes = porcoes;
         this.dificuldade = dificuldade;
+        this.caminhoImagem = caminhoImagem;
     }
-
 
 
     // Getters e Setters
@@ -61,14 +60,6 @@ public class Receita {
         this.nome = nome;
     }
 
-    public String getFotoPath() {
-        return fotoPath;
-    }
-
-    public void setFotoPath(String fotoPath) {
-        this.fotoPath = fotoPath;
-    }
-
     public String getModoPreparo() {
         return modoPreparo;
     }
@@ -99,6 +90,14 @@ public class Receita {
 
     public void setDificuldade(String dificuldade) {
         this.dificuldade = dificuldade;
+    }
+
+    public String getCaminhoImagem() {
+        return caminhoImagem;
+    }
+
+    public void setCaminhoImagem(String caminhoImagem) {
+        this.caminhoImagem = caminhoImagem;
     }
 }
 

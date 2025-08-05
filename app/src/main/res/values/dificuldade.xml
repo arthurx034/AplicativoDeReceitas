@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dificuldade_receita">
+        <item>Selecione a dificuldade</item>
+        <item>Fácil</item>
+        <item>Médio</item>
+        <item>Difícil</item>
+        <item>Chef Profissional</item>
+    </string-array>
+</resources>
